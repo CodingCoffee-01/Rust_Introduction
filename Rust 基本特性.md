@@ -1,5 +1,10 @@
 ### Rust 和 C/C++ 都是系統程式語言，但它們之間有幾個關鍵區別，特別是在記憶體安全、並發處理、錯誤處理和所有權模型等方面。以下是一些 Rust 的基本特性與 C/C++ 的不同之處，並透過程式碼實例來說明這些差異：
 
+- [學習 Rust](https://www.rust-lang.org/zh-TW/learn)
+  
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
 
 ### 1. 所有權（Ownership）和借用（Borrowing）
 Rust 的核心特性是「所有權系統」，這是與 C/C++ 最顯著的差異。 
