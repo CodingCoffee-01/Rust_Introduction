@@ -6,6 +6,8 @@ Rust 和 C/C++ 都是系統程式語言，但它們之間有幾個關鍵區別�
   
 - [The Rust Programming Language](https://doc.rust-lang.org/book/)
 
+- [Rust 程式設計語言](https://rust-lang.tw/book-tw/title-page.html)
+
 - [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
 
 ### 1. 所有權（Ownership）和借用（Borrowing）
