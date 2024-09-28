@@ -7,6 +7,7 @@ Rust 在 Web3 和加密貨幣領域的發展迅速，成為了許多核心專案
 Rust 是 WebAssembly（Wasm）環境中非常受歡迎的語言之一。
 
 由於 WebAssembly 被許多區塊鏈平台用作智慧合約執行環境，Rust 成為了開發智慧合約的熱門。
+
 例如：
 • Polkadot 和 Substrate：Polkadot 是一個基於 Rust 編寫的區塊鏈協議，而 Substrate 是其底層開發框架，允許開發者創建客製化區塊鏈。
 
