@@ -7,28 +7,24 @@ Rust 透過編譯時的所有權機制，確保記憶體安全，避免了像 C/
 
 #### Rust 範例：
 
-  fn main() {
-      let s1 = String::from("hello");
-      let s2 = s1; // s1 的所有權轉移給 s2
-      // println!("{}", s1); // 這裡編譯會報錯，因為 s1 已不再擁有該值
-      println!("{}", s2);
-  }
+    fn main() {
+          let s1 = String::from("hello");
+          let s2 = s1; // s1 的所有權轉移給 s2
+          // println!("{}", s1); // 這裡編譯會報錯，因為 s1 已不再擁有該值
+          println!("{}", s2);
+      }
 
 在 Rust 中，當 s1 的所有權轉移給 s2 時，s1 就不再有效。這樣可以避免懸垂指標或重複釋放記憶體的問題。
 
 
 #### C++ 範例：
 
-  #include <iostream>
-  #include <string>
-  
-  int main() {
-      std::string s1 = "hello";
-      std::string s2 = s1; // s2 是 s1 的副本
-      std::cout << s1 << std::endl; // C++ 中 s1 和 s2 都是有效的
-      std::cout << s2 << std::endl;
-      return 0;
-  }
+    fn main() {
+          let s1 = String::from("hello");
+          let s2 = s1; // s1 的所有權轉移給 s2
+          // println!("{}", s1); // 這裡編譯會報錯，因為 s1 已不再擁有該值
+          println!("{}", s2);
+      }
   
 在 C++ 中，s1 和 s2 是兩個獨立的對象，持有相同的字串內容。如果需要手動管理內存，開發者容易犯錯，導致內存洩漏或重複釋放。
 
@@ -38,13 +34,13 @@ Rust 使用借用檢查器在編譯時確保沒有資料競爭。 Rust 有兩種
 
 #### Rust 範例：
 
-  fn main() {
-      let mut s = String::from("hello");
-      let r1 = &s; // 不可變借用
-      let r2 = &s; // 可以有多個不可變借用
-      // let r3 = &mut s; // 這裡編譯會報錯，不能同時有可變和不可變借用
-      println!("{} and {}", r1, r2);
-  }
+     fn main() {
+          let mut s = String::from("hello");
+          let r1 = &s; // 不可變借用
+          let r2 = &s; // 可以有多個不可變借用
+          // let r3 = &mut s; // 這裡編譯會報錯，不能同時有可變和不可變借用
+          println!("{} and {}", r1, r2);
+      }
   
 Rust 不允許同時存在一個可變借用和多個不可變借用，避免了資料競爭。而在 C/C++ 中，這種控制需要開發者自己處理，容易產生並發問題。
 
