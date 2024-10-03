@@ -43,4 +43,4 @@ Rust 的最大優勢之一是其獨特的所有權機制，它在編譯時檢查
 
 
 
-#####    --------     [CodingCoffee more courses -- http://www.codingcoffee.org/](http://www.codingcoffee.org/)    -------
+#####    --------         [CodingCoffee more courses -- http://www.codingcoffee.org/](http://www.codingcoffee.org/)           -------
